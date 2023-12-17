@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+body{
+    background: linear-gradient(rgb(22, 1, 54),rgb(9, 0, 21));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.head img{
+    width: 600px;
+    height: 600px;
+}
+
+/* ........................................................... */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.about div{
+    padding: 50px;
+}
+
+.about img{
+    width: 500px;
+    height: 500px;
+}
+
+.about div h1{
+    color: white;
+}
+
+.about div p{
+    margin-top: 5%;
+    color: white;
+    line-height: 2rem;
+}
+
+.about div span{
+    color: yellow;
+}
+
+.reveal{
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+@media (max-width:992px){
+    .head img{
+        width: 450px;
+        height: 450px;
+    }
+    .about img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about div h1{
+        font-size: 1.5rem;
+    }
+
+    .about div p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:576px){
+    .head img{
+        width: 300px;
+        height: 300px;
+        margin-top: 5%;
+    }
+
+    .head{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+}
+
+/* ......................................................... */
+.h-skill{
+    margin: 5% 5%;
+    cursor: pointer;
+}
+.contain {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ddd;
+  }
+
+  .s-skill{
+    cursor: pointer;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+  }
+
+  .skills-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .skills-bar div{
+    width: 80%;
+  }
+  
+  .skills-bar p{
+        color: white;
+        margin-top: 3%;
+  }
+
+  .skills-bar div .html{
+    width: 80%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .css{
+    width: 80%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .bootstrap{
+    width: 70%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .jquery{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .h-skill div h1{
+    font-size: 3rem;
+  }
+
+  .s-skill div h1{
+    font-size: 3rem;
+  }
+
+  .skills-bar div .js{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .php{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .laravel{
+    width: 70%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .mysql{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .wp{
+    width: 40%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .py{
+    width: 65%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .djan{
+    width: 70%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .psql{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .sqlite{
+    width: 60%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .skills-bar div .odoo{
+    width: 40%;
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .s-skill{
+    margin: 5% 5%;
+  }
+
+  .soft-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .soft-bar h3{
+    color: white;
+    margin-top: 10%;
+  }
+
+  @media (max-width:576px){
+    .soft-bar{
+        flex-direction: column;
+    }
+
+    .soft-bar div{
+        width: 100%;
+        margin: 0 5%;
+    }
+
+    .skills-bar div{
+        width: 100%;
+    }
+
+    .h-skill div h1{
+        font-size: 2rem;
+    }
+    .s-skill div h1{
+        font-size: 2rem;
+    }
+
+    .soft-bar div h3{
+        font-size: 1rem;
+    }
+    
+    .skills-bar{
+        flex-direction: column;
+    }
+  }
+
+.project{
+    margin: 5% 5%;
+    cursor: pointer;
+}
+
+.pro-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin-top: 5%;
+
+}
+
+.pro-list div{
+    border: 1px solid grey;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pro-list div:hover{
+    background-color: rgb(37, 192, 200);
+    transition: 0.5s;
+}
+.pro-list div h4{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.pro-list div .btn{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width:576px){
+    .pro-list{
+        grid-template-columns: auto;
+    }
+
+    .pro-list div h4{
+        font-size: 1rem;
+    }
+}
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+.contact{
+    margin: 5% 5%;
+}
+
+.contact div{
+    margin-top: 5%;
+}
+.contact div h1{
+    color: white;
+}
+
+.contact div p{
+    color: white;
+}
+
+.icon a i{
+    font-size: 3rem;
+    margin-right: 5%;
+}
